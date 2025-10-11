@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Modern responsive portfolio website built with React.js",
   "main": "index.js",
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,5 +37,8 @@
     "personal-website"
   ],
   "author": "Salauddin Ansari",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  }
 }
