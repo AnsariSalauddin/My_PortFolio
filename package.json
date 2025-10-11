@@ -38,7 +38,7 @@
   ],
   "author": "Salauddin Ansari",
   "license": "MIT",
-  "engines": {
-    "node": "18.x"
-  }
+ "engines": {
+  "node": "22.x"
+}
 }
