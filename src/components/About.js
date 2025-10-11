@@ -27,24 +27,24 @@ const About = () => {
   const features = [
     {
       icon: <FaCode />,
-      title: 'Clean Code',
-      description: 'Writing maintainable and scalable code with best practices and design patterns.'
+      title: 'Experience',
+      description: '1+ years as a Java Spring Boot Developer'
     },
     {
       icon: <FaPalette />,
-      title: 'UI/UX Design',
-      description: 'Creating beautiful and intuitive user interfaces that provide exceptional user experiences.'
+      title: 'Education',
+      description: 'B.Tech in Computer Science and Engineering at AKTU'
     },
-    {
-      icon: <FaRocket />,
-      title: 'Performance',
-      description: 'Optimizing applications for speed, efficiency, and seamless user interactions.'
-    },
-    {
-      icon: <FaUsers />,
-      title: 'Collaboration',
-      description: 'Working effectively in teams and communicating complex technical concepts clearly.'
-    }
+    // {
+    //   icon: <FaRocket />,
+    //   title: 'Performance',
+    //   description: 'Optimizing applications for speed, efficiency, and seamless user interactions.'
+    // },
+    // {
+    //   icon: <FaUsers />,
+    //   title: 'Collaboration',
+    //   description: 'Working effectively in teams and communicating complex technical concepts clearly.'
+    // }
   ];
 
   return (
@@ -53,18 +53,14 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <h2 className="section-title">About Me</h2>
-            <p className="section-subtitle">
+            {/* <p className="section-subtitle">
               Passionate developer with a love for creating digital experiences
-            </p>
-            
+            </p> */}
             <div className="about-description">
               <p>
-                I'm a passionate full-stack developer with over 3 years of experience creating 
-                digital solutions that make a difference. My journey in tech started with curiosity 
-                about how websites work, and it has evolved into a deep passion for building 
-                applications that solve real-world problems.
+              I am a Java Backend Developer with hands-on experience in building REST APIs using Java and Spring Boot with ORM framework Hibernate. I have work experience with multiple start-ups.
               </p>
-              <p>
+              {/* <p>
                 I specialize in modern web technologies including React, Node.js, and cloud platforms. 
                 I believe in writing clean, maintainable code and always staying up-to-date with the 
                 latest industry trends and best practices.
@@ -72,7 +68,7 @@ const About = () => {
               <p>
                 When I'm not coding, you can find me exploring new technologies, contributing to 
                 open-source projects, or sharing knowledge with the developer community.
-              </p>
+              </p> */}
             </div>
 
             {/* <div className="stats">

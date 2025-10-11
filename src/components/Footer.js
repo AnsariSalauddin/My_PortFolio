@@ -14,7 +14,7 @@ const Footer = () => {
               Built with <FaHeart className="heart-icon" /> using React.js
             </p>
             <p className="copyright">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Salauddin Ansari. All rights reserved.
             </p>
           </div>
           
