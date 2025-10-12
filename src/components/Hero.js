@@ -58,10 +58,10 @@ const Hero = () => {
             </div>
 
             <div className="hero-social">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/AnsariSalauddin" target="_blank" rel="noopener noreferrer" className="social-link">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/salauddin-ansari-560468238/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <FaLinkedin />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -73,7 +73,18 @@ const Hero = () => {
           <div className="hero-image">
             <div className="image-container">
                <div className="profile-image">
-                 <img src={require('../assest/SalauddinImage.jpg')} alt="Salauddin Ansari" className="profile-img" />
+                 <img 
+                   src={require('../assest/SalauddinImage.jpg')} 
+                   alt="Salauddin Ansari" 
+                   className="profile-img"
+                   onError={(e) => {
+                     e.target.style.display = 'none';
+                     e.target.nextSibling.style.display = 'flex';
+                   }}
+                 />
+                 <div className="image-placeholder" style={{display: 'none'}}>
+                   <span>Salauddin Ansari</span>
+                 </div>
                </div>
               <div className="image-decoration"></div>
             </div>

@@ -36,10 +36,9 @@ const Projects = () => {
     },
     {
       title: 'Work Out Tracker',
-      description:'Processing..',
-    //   description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      description: 'Processing...',
       image: '/api/placeholder/400/250',
-      technologies: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
+      technologies: ['Java', 'Spring Boot', 'MySQL', 'Hibernate'],
       github: 'https://github.com',
       live: 'https://example.com',
       featured: true

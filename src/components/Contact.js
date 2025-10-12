@@ -44,35 +44,51 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus('');
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Create mailto link for actual email sending
+      const subject = encodeURIComponent(formData.subject);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      const mailtoLink = `mailto:salauddin.ansari@example.com?subject=${subject}&body=${body}`;
+      
+      // Open email client
+      window.open(mailtoLink, '_blank');
+      
+      // Show success message
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
       
+      // Clear success message after 5 seconds
       setTimeout(() => {
         setSubmitStatus('');
-      }, 3000);
-    }, 2000);
+      }, 5000);
+      
+    } catch (error) {
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      console.error('Error sending email:', error);
+    }
   };
 
   const contactInfo = [
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      value: 'salauddin.ansari@example.com',
+      link: 'mailto:salauddin.ansari@example.com'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+91 (XXX) XXX-XXXX',
+      link: 'tel:+91XXXXXXXXXX'
     },
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      value: 'Your City, Country',
+      value: 'India',
       link: null
     }
   ];
@@ -215,7 +231,13 @@ const Contact = () => {
 
               {submitStatus === 'success' && (
                 <div className="form-success">
-                  Thank you! Your message has been sent successfully.
+                  Thank you! Your email client should open with the message ready to send.
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="form-error">
+                  Sorry, there was an error. Please try again or contact me directly.
                 </div>
               )}
             </form>

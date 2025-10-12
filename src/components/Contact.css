@@ -134,7 +134,7 @@
 .contact-form {
   background: var(--bg-secondary);
   padding: 40px;
-  border-radius: 16px;
+  border-radius: 4px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
 }
@@ -148,7 +148,7 @@
   width: 100%;
   padding: 15px;
   border: 2px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 16px;
   font-family: inherit;
   background: var(--bg-primary);
@@ -177,7 +177,17 @@
   padding: 15px;
   background: #d1fae5;
   color: #065f46;
-  border-radius: 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-error {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 4px;
   text-align: center;
   font-weight: 500;
 }

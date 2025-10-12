@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a6015f6.css",
-    "main.js": "/static/js/main.74d93625.js",
+    "main.css": "/static/css/main.94bfb85d.css",
+    "main.js": "/static/js/main.9e4e25ce.js",
+    "static/media/SalauddinImage.jpg": "/static/media/SalauddinImage.704b057523d4f6ed003a.jpg",
     "index.html": "/index.html",
-    "main.2a6015f6.css.map": "/static/css/main.2a6015f6.css.map",
-    "main.74d93625.js.map": "/static/js/main.74d93625.js.map"
+    "main.94bfb85d.css.map": "/static/css/main.94bfb85d.css.map",
+    "main.9e4e25ce.js.map": "/static/js/main.9e4e25ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a6015f6.css",
-    "static/js/main.74d93625.js"
+    "static/css/main.94bfb85d.css",
+    "static/js/main.9e4e25ce.js"
   ]
 }
