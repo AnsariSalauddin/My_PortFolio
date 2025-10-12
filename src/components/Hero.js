@@ -73,7 +73,7 @@ const Hero = () => {
           <div className="hero-image">
             <div className="image-container">
                <div className="profile-image">
-                 <img src={require('../assets/SalauddinImage.jpg')} alt="Salauddin Ansari" className="profile-img" />
+                 <img src={require('../assest/SalauddinImage.jpg')} alt="Salauddin Ansari" className="profile-img" />
                </div>
               <div className="image-decoration"></div>
             </div>
