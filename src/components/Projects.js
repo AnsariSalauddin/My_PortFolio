@@ -26,12 +26,12 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Quiz Application',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and admin dashboard.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Core Java', 'SpringBoot', 'MySql', 'Hibernate'],
-      github: 'https://github.com',
-      live: 'https://example.com',
+      title: 'Code Debugger',
+      description: 'Code Debugger is a full-stack web application that helps developers identify and fix bugs instantly using the power of Groq AI. Simply paste your code, select the language, and get detailed explanations with suggested fixes in seconds.',
+      image: '/images/code-debugger.png',
+      technologies: ['Core Java', 'SpringBoot', 'React.js', 'Groq AI','Docker','Render','Vercek','Rest API'],
+      github: 'https://github.com/AnsariSalauddin/CodeDebugger',
+      live: 'https://code-debugger-frontend-khaki.vercel.app/',
       featured: true
     },
     {
